@@ -312,41 +312,16 @@ WHITELIST = ["文件传输助手"]
 ## Privacy notes
 
 - Files are read from `user_files/inbox` unless you explicitly pass a path.
-- The project does not intentionally upload files.
+- The project does not intentionally upload local files.
 - Ollama runs locally by default.
-- `ddgs` web search uses online search services.
-- Docling may download models and cache them locally.
-- WeChat polling logs and cache files should never be committed.
+- `/search` uses online search services through `ddgs`.
+- Docling may download and cache document parsing/OCR models locally.
+- WeChat polling logs are ignored by `.gitignore` and should not be committed.
 
-## Before uploading to GitHub
+## Repository hygiene
 
-Delete these:
+This repository intentionally excludes local runtime files such as IDE settings, Python cache files, WeChat automation logs, local configuration files, and private documents.
 
-```text
-.idea/
-__pycache__/
-core/__pycache__/
-wxauto_logs/
-core/wxauto_logs/
-*.log
-```
-
-Do not commit:
-
-```text
-config.local.py
-user_files/inbox/*
-real WeChat contacts
-private documents
-local model files
-API keys
-```
-
-Keep:
-
-```text
-user_files/inbox/.gitkeep
-```
 
 ## Related projects / dependencies
 
