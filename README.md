@@ -58,11 +58,7 @@ user_files/
 
    https://ollama.com/download/windows
 
-   After installation, start Ollama and pull or create a model. This project currently expects:
-
-   ```text
-   ilunaz-qwen
-   ```
+   After installation, start Ollama and pull or create a model.
 
    You can change this in:
 
