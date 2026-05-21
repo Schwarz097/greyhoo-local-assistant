@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# Logs / runtime caches
+*.log
+wxauto_logs/
+core/wxauto_logs/
+
+# Local config
+config.local.py
+.env
+
+# User files
+user_files/inbox/*
+!user_files/inbox/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
